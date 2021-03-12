@@ -1,0 +1,19 @@
+<aura:component implements="force:appHostable" controller="Accounts">
+    
+    <ltng:require styles="{!$Resource.Tabulator + '/tabulator-master/dist/css/tabulator.min.css'}"
+                  scripts="{!$Resource.Tabulator + '/tabulator-master/dist/js/tabulator.js'}" afterScriptsLoaded="{!c.doInit}"/>
+    
+    <lightning:spinner aura:id="mySpinner" />
+    <div class="slds-card">
+        <br/>
+       <div class="slds-text-heading_large">&nbsp; &nbsp;Financial Services Account Listing</div>
+        <lightning:layout >
+            <lightning:layoutItem padding="around-small" size="12">
+                <div id="accountTable" > </div>
+            </lightning:layoutItem>
+        </lightning:layout>
+        
+        
+    </div>
+    
+</aura:component>
